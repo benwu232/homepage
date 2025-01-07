@@ -147,15 +147,15 @@ class _IntroductionPageState extends State<IntroductionPage>
             ).addInkWell(
               onTap: ksLinkedInLink.launchWebsite,
             ),
-            const Text(ksSlash).addCenter().addSizedBox(
-                  width: s50,
-                ),
-            AnimatedHoverLink(
-              label: ksDiscord,
-              controller: _controller,
-            ).addInkWell(
-              onTap: ksDiscordLink.launchWebsite,
-            ),
+            // const Text(ksSlash).addCenter().addSizedBox(
+            //       width: s50,
+            //     ),
+            // AnimatedHoverLink(
+            //   label: ksDiscord,
+            //   controller: _controller,
+            // ).addInkWell(
+            //   onTap: ksDiscordLink.launchWebsite,
+            // ),
           ].addRow(),
         ].addColumn(
           mainAxisAlignment: MainAxisAlignment.center,

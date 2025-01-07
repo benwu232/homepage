@@ -59,11 +59,11 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Wrapper(
       page: mainPages.addListView(
-          key: _key,
-          controller: _scrollController,
-          physics: const ClampingScrollPhysics(),
-          scrollDirection: Axis.vertical,
-        ),
+        key: _key,
+        controller: _scrollController,
+        physics: const ClampingScrollPhysics(),
+        scrollDirection: Axis.vertical,
+      ),
     );
   }
 }

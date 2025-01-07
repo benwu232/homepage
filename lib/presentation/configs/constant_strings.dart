@@ -14,7 +14,7 @@ import 'package:yelwinoo/presentation/route/routes.dart';
 /// constant strings are prefixed with [ks]
 const String ksFontFamily = "ShantellSans";
 
-const String ksFlutterDeveloperAnd = "Flutter Developer &";
+const String ksFlutterDeveloperAnd = "Software Engineer &";
 const String ksAiMlEnthusiast = "AI/ML Enthusiast";
 const String ksAiEnthusiast = "ai enthusiast";
 const String ksTechNerd = "a  tech  nerd";
@@ -23,10 +23,10 @@ const String coffeeAddict = "coffee addict";
 const String ksIntrovert = "an introvert";
 const String ksIm = "I'm";
 const String ksIntro = """
-  Hi, I'm Ye Lwin Oo!
-    - a passionate mobile developer
-    - a CDM student from UCSM
-    - an avid reader
+  Hi, I'm Ben Wu!
+    - an experienced engineer
+    - a passionate researcher
+    - a creative innovator
   """;
 const String ksSeeMyWork = "See my work";
 const String ksBrowseProjects = "Browse My Projects";
@@ -330,8 +330,8 @@ final List<Quote> ksQuotes = [
 ];
 
 const String ksFacebookLink = 'https://www.facebook.com/ye.lwin.oo.someone';
-const String ksGithubLink = 'https://github.com/YeLwinOo-Steve';
-const String ksLinkedInLink = 'https://www.linkedin.com/in/ye-lwin-oo-ucsm/';
+const String ksGithubLink = 'https://github.com/benwu232';
+const String ksLinkedInLink = 'https://www.linkedin.com/in/benwu232/';
 const String ksMediumLink = 'https://yelwino.medium.com/';
 const String ksStackoverflowLink =
     'https://stackoverflow.com/users/19209151/ye-lwin-oo';
@@ -404,7 +404,7 @@ const String _MAC = 'MacOs';
 const String _WEB = 'Web';
 final List<ShowcaseProject> ksShowcaseProjects = [
   ShowcaseProject(
-    title: 'Pulse-X State Management',
+    title: 'TBPS',
     image: kaPulseX,
     shortDescription:
         "Pulse-X is a state management library for Flutter projects.",

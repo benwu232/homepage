@@ -123,13 +123,13 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
           leading: Logo(
             onTap: navigateToHomePage,
           ),
-          actions: [
-            MenuButton(
-              onPressed: onMenuTapped,
-              hasMenuTapped: _isDrawerOpen,
-            ),
-            horizontalSpaceLarge,
-          ],
+          // actions: [
+          //   MenuButton(
+          //     onPressed: onMenuTapped,
+          //     hasMenuTapped: _isDrawerOpen,
+          //   ),
+          //   horizontalSpaceLarge,
+          // ],
         ),
       ),
       body: <Widget>[

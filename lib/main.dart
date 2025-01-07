@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:layout/layout.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'package:yelwinoo/injection.dart';
-import 'package:yelwinoo/presentation/utils/extensions/extensions.dart';
+import 'injection.dart';
+import 'presentation/utils/extensions/extensions.dart';
 
 import 'firebase_options.dart';
 import 'presentation/route/routes.dart';
@@ -30,7 +30,7 @@ class TucoYe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Layout(
       child: MaterialApp(
-        title: 'yelwinoo',
+        title: 'benwu232',
         scrollBehavior: AppScrollBehavior(),
         debugShowCheckedModeBanner: false,
         theme: context.theme(),
