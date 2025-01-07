@@ -10,6 +10,8 @@ import 'package:yelwinoo/presentation/widgets/widgets.dart';
 
 import '../../configs/configs.dart';
 
+int n = 1;
+
 class ShowcaseProjectsPage extends StatefulWidget {
   const ShowcaseProjectsPage({Key? key}) : super(key: key);
 
@@ -93,7 +95,7 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
       recentProjectsText(),
       verticalSpaceMedium,
       ...ksShowcaseProjects
-          .sublist(0, 3)
+          .sublist(0, n)
           .map(
             (project) => <Widget>[
               projectImage(project),
@@ -113,7 +115,7 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
     return <Widget>[
       <Widget>[
         ...ksShowcaseProjects
-            .sublist(0, 3)
+            .sublist(0, n)
             .map(
               (project) => projectImage(project),
             )
@@ -139,7 +141,7 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
           crossAxisAlignment: CrossAxisAlignment.start,
         ),
         ...ksShowcaseProjects
-            .sublist(0, 3)
+            .sublist(0, n)
             .map(
               (project) => projectDescriptionText(project),
             )

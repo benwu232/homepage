@@ -55,10 +55,10 @@ const String ksSendMessage = 'Send Message';
 
 const String ksSlash = "/";
 const String ksLetsWork = "Let's work together!";
-const String ksFreelanceAvailability = "I'm available for Freelancing";
+const String ksFreelanceAvailability = "I'm ready!";
 const String ksContactInfo = "- Contact Info";
-const String ksWorkEmail = "yelwinoo.work@gmail.com";
-const String ksWorkPhone = "+959 976294818";
+const String ksWorkEmail = "benwu232@gmail.com";
+const String ksWorkPhone = "+64 274275973";
 const String ksCreditTo = "- Big Thanks";
 const String ksDavidCobbina = "David Cobbina";
 const String ksDavidCobbinaWebsite = "https://davidcobbina.com/";
@@ -67,7 +67,7 @@ const String ksJuliusGWebsite =
     "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
 const String ksBuildUsing = "Build using ";
 const String ksWithMuch = " with much ";
-const String ksCC = "©️ 2023 Ye Lwin Oo";
+const String ksCC = "©️ 2025 Ben Wu";
 const String ksYoung = "When I was young, I was a kid!";
 const String ksNobody = "I'm NOBODY";
 const String ksSpecialization =
@@ -329,7 +329,7 @@ final List<Quote> ksQuotes = [
   ),
 ];
 
-const String ksFacebookLink = 'https://www.facebook.com/ye.lwin.oo.someone';
+const String ksFacebookLink = 'https://www.facebook.com/benwu232';
 const String ksGithubLink = 'https://github.com/benwu232';
 const String ksLinkedInLink = 'https://www.linkedin.com/in/benwu232/';
 const String ksMediumLink = 'https://yelwino.medium.com/';
@@ -361,30 +361,30 @@ final List<SocialMedia> ksSocialMedia = [
       size: s18,
     ),
   ),
-  SocialMedia(
-    link: ksMediumLink,
-    icon: FaIcon(
-      FontAwesomeIcons.medium,
-      color: kSecondary,
-      size: s18,
-    ),
-  ),
-  SocialMedia(
-    link: ksStackoverflowLink,
-    icon: FaIcon(
-      FontAwesomeIcons.stackOverflow,
-      color: kSecondary,
-      size: s18,
-    ),
-  ),
-  SocialMedia(
-    link: ksDiscordLink,
-    icon: FaIcon(
-      FontAwesomeIcons.discord,
-      color: kSecondary,
-      size: s18,
-    ),
-  ),
+  // SocialMedia(
+  //   link: ksMediumLink,
+  //   icon: FaIcon(
+  //     FontAwesomeIcons.medium,
+  //     color: kSecondary,
+  //     size: s18,
+  //   ),
+  // ),
+  // SocialMedia(
+  //   link: ksStackoverflowLink,
+  //   icon: FaIcon(
+  //     FontAwesomeIcons.stackOverflow,
+  //     color: kSecondary,
+  //     size: s18,
+  //   ),
+  // ),
+  // SocialMedia(
+  //   link: ksDiscordLink,
+  //   icon: FaIcon(
+  //     FontAwesomeIcons.discord,
+  //     color: kSecondary,
+  //     size: s18,
+  //   ),
+  // ),
 ];
 
 const String _FLUTTER = 'Flutter';
@@ -394,7 +394,7 @@ const String _HTML = 'Html';
 const String _CSS = 'Css';
 const String _JAVASCRIPT = 'Javascript';
 const String _GRAPHQL = "GraphQL";
-const String _ME = 'Ye Lwin Oo';
+const String _ME = 'benwu232';
 
 const String _ANDROID = 'Android';
 const String _IOS = 'Ios';
@@ -405,35 +405,30 @@ const String _WEB = 'Web';
 final List<ShowcaseProject> ksShowcaseProjects = [
   ShowcaseProject(
     title: 'TBPS',
-    image: kaPulseX,
+    image: kaTbps,
     shortDescription:
-        "Pulse-X is a state management library for Flutter projects.",
+        "TBPS is a Three-Body Problem Simulator.",
     description: """
-        Pulse-X is the state management for Flutter projects. It has four features:
-          - state management
-          - context-less routing
-          - dependency injection 
-          - reaction (side effects)
+        TBPS is a versatile three-body problem simulator that allows you to explore the fascinating and mysterious dynamics of three-body phenomena. Whether you're an observer marveling at the unpredictable motions of celestial objects or a creator designing unique universes by tweaking various parameters, TBPS offers a compelling experience.
+
         """,
     link: ProjectInfo(
       icon: kiLink,
-      label: "Project Links",
+      label: "App Links",
       isLink: true,
       contents: [
-        "https://pub.dev/packages/pulse_x",
-        "https://github.com/YeLwinOo-Steve/pulse_x",
+        'https://apps.apple.com/nz/app/tbps-free/id6739697481',
+        'https://play.google.com/store/apps/details?id=com.ex3.tbps.free',
       ],
     ),
-    heroTag: 'pulse-x',
+    heroTag: 'TBPS',
     tags: ProjectInfo(
       icon: kiTag,
       label: 'Tags',
       isTag: true,
       contents: [
-        'package',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-        'state management',
+        'Three-Body Problem',
+        'Chaos Dynamics',
       ],
     ),
     tech: ProjectInfo(
@@ -457,9 +452,9 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       contents: [
         _ANDROID,
         _IOS,
-        _WINDOWS,
-        _LINUX,
-        _MAC,
+        // _WINDOWS,
+        // _LINUX,
+        // _MAC,
       ],
     ),
   ),
@@ -520,366 +515,60 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       ],
     ),
   ),
-  ShowcaseProject(
-    title: 'Threads Logo Animation',
-    image: kaThread,
-    shortDescription:
-        "Animated Facebook Threads App Logo made with custom paths and painters",
-    description: """
-        Here, I provide you with 4 things:
-          1. Two versions of animated threads logo - stroked thread logo and filled threads logo
-          2. Custom Gradient slider with gradient thumb
-          3. Custom Gradient Text
-          4. Custom Gradient Icon Button
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/thread_logo_animation",
-      ],
-    ),
-    heroTag: 'threads_logo',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'animation',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _WEB,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'The Golden Land (Myanmar) ',
-    image: kaTheGoldenLand,
-    shortDescription:
-        "The Golden Land (Myanmar) is a website for showing Myanmar's Culture.",
-    description: """
-        An all-in-one website that you can explore Myanmar's Traditions
-        
-        This is the web project showing the Culture, Cuisine, Festivals, Famous Places, Ethnic Groups and Handicrafts in Myanmar.
-        Some of the data may be inaccurate because I collect most of my data on the Internet.
-        """,
-    link: ProjectInfo(
-        icon: kiLink,
-        label: "Project Links",
-        isLink: true,
-        contents: [
-          "https://the-golden-land.vercel.app/",
-          "https://github.com/YeLwinOo-Steve/TheGoldenLand",
-        ]),
-    heroTag: 'the-golden-land',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'website',
-        _HTML.toLowerCase(),
-        _CSS.toLowerCase(),
-        _JAVASCRIPT.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _HTML.toUpperCase(),
-        _CSS.toUpperCase(),
-        _JAVASCRIPT.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _WEB,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Pretty Animated Buttons',
-    image: kaAnimatedButtons,
-    shortDescription:
-        "A collection of ready-to-use smoothly animated pretty buttons written in Flutter",
-    description: """
-        Pretty Animated Buttons is a package for a collection of beautiful animated buttons which are highly customizable too.
-        Currently, a total of 12 animated buttons are available. More fancy buttons are coming soon...
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://pub.dev/packages/pretty_animated_buttons",
-        "https://github.com/YeLwinOo-Steve/pretty_animated_buttons",
-      ],
-    ),
-    heroTag: 'pretty_animated_buttons',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'package',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-        'animation',
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _FLUTTER.toUpperCase(),
-        _DART.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _LINUX,
-        _MAC,
-        _WEB,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Flappy Ironman',
-    image: kaIronMan,
-    shortDescription: "Flappy Ironman game inspired by Flappy Bird Game",
-    description: """
-        This is Flappy Ironman game inspired by Flappy Bird Game. 
-        No external game engine packages are used.
-        Written in Flutter ...
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/FlappyIronman",
-      ],
-    ),
-    heroTag: 'flappy_ironman',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'game',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'AI Chat Bot',
-    image: kaAIChatBot,
-    shortDescription: "AI chat bot using Flutter and Dialogflow.",
-    description: """
-        AI chat bot using Flutter and Dialogflow.
-        ⚠️ Dialogflow key is now expired so it won't work no more ...
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/AIChatbot",
-      ],
-    ),
-    heroTag: 'ai_chat_bot',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'chat bot',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'GraphQL Notes',
-    image: kaGraphQLNotes,
-    shortDescription: "My Apollo graphQL Associate Certified Developer path",
-    description: """
-       My Apollo graphQL Associate Certified Developer path coding practice notes
-       All of these notes are available at Apollo GraphQL Tutorials
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/graphql-associate-dev",
-      ],
-    ),
-    heroTag: 'graphql_notes',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: ['GraphQL', 'note'],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _GRAPHQL.toLowerCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Design Patterns',
-    image: kaDesignPatterns,
-    shortDescription:
-        "Design patterns usage with simple examples written in Dart",
-    description: """
-        Design patterns usage with simple examples written in Dart
-        Currently, not all design patterns are available yet.
-        Still developing ...
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/design_patterns",
-      ],
-    ),
-    heroTag: 'design_patterns',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'design_patterns',
-        _DART.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [],
-    ),
-  ),
+  // ShowcaseProject(
+  //   title: 'Threads Logo Animation',
+  //   image: kaThread,
+  //   shortDescription:
+  //       "Animated Facebook Threads App Logo made with custom paths and painters",
+  //   description: """
+  //       Here, I provide you with 4 things:
+  //         1. Two versions of animated threads logo - stroked thread logo and filled threads logo
+  //         2. Custom Gradient slider with gradient thumb
+  //         3. Custom Gradient Text
+  //         4. Custom Gradient Icon Button
+  //       """,
+  //   link: ProjectInfo(
+  //     icon: kiLink,
+  //     label: "Project Links",
+  //     isLink: true,
+  //     contents: [
+  //       "https://github.com/YeLwinOo-Steve/thread_logo_animation",
+  //     ],
+  //   ),
+  //   heroTag: 'threads_logo',
+  //   tags: ProjectInfo(
+  //     icon: kiTag,
+  //     label: 'Tags',
+  //     isTag: true,
+  //     contents: [
+  //       'animation',
+  //       _FLUTTER.toLowerCase(),
+  //       _DART.toLowerCase(),
+  //     ],
+  //   ),
+  //   tech: ProjectInfo(
+  //     icon: kiChip,
+  //     label: 'Tools & Technologies',
+  //     contents: [
+  //       _DART.toUpperCase(),
+  //       _FLUTTER.toUpperCase(),
+  //     ],
+  //   ),
+  //   author: ProjectInfo(
+  //     icon: kiPerson,
+  //     label: 'Developer',
+  //     contents: [
+  //       _ME,
+  //     ],
+  //   ),
+  //   platform: ProjectInfo(
+  //     icon: kiLaptop,
+  //     label: 'Available Platforms',
+  //     contents: [
+  //       _ANDROID,
+  //       _IOS,
+  //       _WEB,
+  //     ],
+  //   ),
+  // ),
 ];
