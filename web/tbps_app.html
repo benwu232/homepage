@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TBPS Redirect</title>
+</head>
+<body>
+    <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    ">
+        <h2>Opening TBPS...</h2>
+        <p>If TBPS does not open automatically, <a id="manual-link" href="#">please click here</a></p>
+        <p>You needd TBPS App installed on your device to open the link. </p>
+        <p>If not, please download it from the link below:</p>
+        <table style="border-collapse: collapse; border: 2px solid #808080;">
+            <tr>
+                <th style="color: black; padding: 10px; border: 1px solid #d0d0d0; background-color: #f0f0f0;">App Store</th>
+                <th style="color: black; padding: 10px; border: 1px solid #d0d0d0; background-color: #f0f0f0;">Google Play</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><a href="https://apps.apple.com/nz/app/tbps-free/id6739697481">Lite</a></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><a href="https://play.google.com/store/apps/details?id=com.ex3.tbps.free">Lite</a></td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><a href="https://apps.apple.com/nz/app/tbps-premium/id6739725463">Premium</a></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><a href="https://play.google.com/store/apps/details?id=com.ex3.tbps.premium">Premium</a></td>
+            </tr>
+        </table>
+
+        <!-- <p>或者</p> -->
+        <!-- <p><a id="intent-link" href="#">使用 Android Intent 打开</a></p> -->
+    </div>
+
+    <script>
+        (function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var data = urlParams.get('data');
+            
+            // 构建普通 URL
+            var tbpsUrl = 'tbps://simulation' + (data ? '?data=' + data : '');
+            
+            // 构建 Intent URL
+            var intentUrl = 'intent://simulation' + 
+                (data ? '?data=' + data : '') + 
+                '#Intent;' +
+                'scheme=tbps;' +
+                'package=com.ex3.tbps.free;' +
+                'action=android.intent.action.VIEW;' +
+                'S.browser_fallback_url=market://details?id=com.ex3.tbps.free;' +
+                'end';
+            
+            // 更新链接
+            document.getElementById('manual-link').href = tbpsUrl;
+            document.getElementById('intent-link').href = intentUrl;
+            
+            // 检测是否在微信中
+            var isWechat = /MicroMessenger/i.test(navigator.userAgent);
+            
+            if (isWechat) {
+                // 在微信中优先使用 Intent URL
+                window.location.href = intentUrl;
+            } else {
+                // 其他环境先尝试普通 URL，如果失败会自动回退到应用商店
+                window.location.href = tbpsUrl;
+                
+                // 延迟尝试 Intent URL 作为备选
+                setTimeout(function() {
+                    window.location.href = intentUrl;
+                }, 1000);
+            }
+        })();
+    </script>
+</body>
+</html> 

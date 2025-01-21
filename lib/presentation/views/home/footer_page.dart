@@ -226,9 +226,9 @@ class _FooterPageState extends State<FooterPage> with TickerProviderStateMixin {
         text: ksFreelanceAvailability,
         textStyle: context
             .adaptive<TextStyle?>(
-              Theme.of(context).textTheme.bodyMedium,
               Theme.of(context).textTheme.titleSmall,
-              md: Theme.of(context).textTheme.bodyLarge,
+              Theme.of(context).textTheme.titleLarge,
+              md: Theme.of(context).textTheme.titleMedium,
             )
             ?.copyWith(
               color: _footerForegroundColor,
@@ -281,20 +281,20 @@ class _FooterPageState extends State<FooterPage> with TickerProviderStateMixin {
       ]
           .addRow(mainAxisSize: MainAxisSize.min)
           .addInkWell(onTap: ksWorkEmail.launchEmail),
-      <Widget>[
-        Icon(
-          kiPhone,
-          color: _footerForegroundColor,
-          size: s18,
-        ),
-        horizontalSpaceMedium,
-        Text(
-          ksWorkPhone,
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: kSecondary,
-              ),
-        ),
-      ].addRow(mainAxisSize: MainAxisSize.min),
+      // <Widget>[
+      //   Icon(
+      //     kiPhone,
+      //     color: _footerForegroundColor,
+      //     size: s18,
+      //   ),
+      //   horizontalSpaceMedium,
+      //   Text(
+      //     ksWorkPhone,
+      //     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+      //           color: kSecondary,
+      //         ),
+      //   ),
+      // ].addRow(mainAxisSize: MainAxisSize.min),
       verticalSpaceMedium,
       <Widget>[
         ...ksSocialMedia.map((media) {
@@ -315,6 +315,27 @@ class _FooterPageState extends State<FooterPage> with TickerProviderStateMixin {
             ),
       ),
       <Widget>[
+        <Widget>[
+          horizontalSpaceMassive,
+          Icon(
+            Atlas.star_trophy_achievement,
+            color: _footerForegroundColor,
+            size: s14,
+          ),
+          horizontalSpaceMedium,
+          Text(
+            "Ye Lwin Oo",
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: _footerForegroundColor,
+                  decorationStyle: TextDecorationStyle.dotted,
+                  decoration: TextDecoration.underline,
+                  decorationColor: _footerForegroundColor,
+                  decorationThickness: s4,
+                ),
+          ),
+        ]
+            .addRow(mainAxisSize: MainAxisSize.min)
+            .addInkWell(onTap: ksDavidCobbinaWebsite.launchWebsite),
         <Widget>[
           horizontalSpaceMassive,
           Icon(

@@ -54,8 +54,9 @@ const String ksDiscord = "Discord";
 const String ksSendMessage = 'Send Message';
 
 const String ksSlash = "/";
-const String ksLetsWork = "Let's work together!";
-const String ksFreelanceAvailability = "I'm ready!";
+// const String ksLetsWork = "Let's work together!";
+const String ksLetsWork = "The best way to predict the future";
+const String ksFreelanceAvailability = " is to create it!";
 const String ksContactInfo = "- Contact Info";
 const String ksWorkEmail = "benwu232@gmail.com";
 const String ksWorkPhone = "+64 274275973";
@@ -128,8 +129,7 @@ const String ksAwardsAndActivities = "Awards & Activities";
 const String ksAward = "Award I've won";
 const String ksAwardName = "Design Award by WIT (Web Innovative Talent Award)";
 const String ksAwardLink = "https://witaward.com/result/2020";
-const String ksAwardDetails =
-    """
+const String ksAwardDetails = """
 - The biggest web development contest in Myanmar ( collaboration with Japan )
 - This project aims for foreigners and Myanmar citizens who are enthusiastic about Myanmar culture, cuisine, handicrafts and who want to pay a visit to famous places in Myanmar and who want to enhance their knowledge about various ethnic groups in Myanmar.
 """;
@@ -188,7 +188,7 @@ final List<Experience> ksExperiences = [
         ● Vouchers, Deals & Rewards
         ● Transaction history
         """,
-        "Maintain AYA Pay Partner App used by tens of thousands of users", 
+      "Maintain AYA Pay Partner App used by tens of thousands of users",
     ],
     startDate: DateTime(2022, 9),
     endDate: DateTime.now(),
@@ -406,8 +406,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
   ShowcaseProject(
     title: 'TBPS',
     image: kaTbps,
-    shortDescription:
-        "TBPS is a Three-Body Problem Simulator.",
+    shortDescription: "TBPS is a Three-Body Problem Simulator.",
     description: """
         TBPS is a versatile three-body problem simulator that allows you to explore the fascinating and mysterious dynamics of three-body phenomena. Whether you're an observer marveling at the unpredictable motions of celestial objects or a creator designing unique universes by tweaking various parameters, TBPS offers a compelling experience.
 

@@ -10,13 +10,18 @@ import 'package:yelwinoo/presentation/views/experience/experience_view.dart';
 import 'package:yelwinoo/presentation/views/home/home_page.dart';
 import 'package:yelwinoo/presentation/views/project_details/project_details_view.dart';
 import 'package:yelwinoo/presentation/views/projects/projects_view.dart';
+import 'package:yelwinoo/presentation/views/tbps_redirect/tbps_redirect_view.dart';
 
 import 'route_transitions.dart';
 
 class RouteGen {
   static Route<dynamic> generateRoute(RouteSettings settings) {
+    final uri = Uri.parse(settings.name ?? '');
     final arguments = settings.arguments;
-    switch (settings.name) {
+
+    print('Handling route: ${uri.path}');
+
+    switch (uri.path) {
       case Routes.home:
         return _buildRoute(const HomePage(), settings: settings);
       case Routes.projects:
@@ -38,7 +43,15 @@ class RouteGen {
         return _buildRoute(const AboutView(), settings: settings);
       case Routes.contact:
         return _buildRoute(const ContactMeView(), settings: settings);
+      case Routes.tbpsApp:
+        final data = uri.queryParameters['data'];
+        print('TBPS redirect with data: $data');
+        return _buildRoute(
+          TbpsRedirectView(data: data),
+          settings: settings,
+        );
       default:
+        print('Route not found: ${uri.path}');
         return _buildRoute(const ErrorView(), settings: settings);
     }
   }
@@ -59,6 +72,7 @@ class Routes {
   static const projectDetails = "/project_details";
   static const about = "/about";
   static const contact = "/contact_me";
+  static const tbpsApp = "/tbps_app";
 }
 
 class ErrorView extends StatelessWidget {

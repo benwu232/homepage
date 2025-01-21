@@ -24,6 +24,10 @@ deploy:
 	@echo "Copying app-ads.txt to web build..."
 	copy app-ads.txt build\web\app-ads.txt
 	
+	@echo "Copying assetlinks.json to web build..."
+	mkdir build\web\.well-known 2>nul
+	copy assetlinks.json build\web\.well-known\assetlinks.json
+	
 	@echo "Deploying to git repository: $(GITHUB_REPO)"
 	cd build/web && \
 	git init && \
