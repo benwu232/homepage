@@ -23,6 +23,7 @@ deploy:
 	
 	@echo "Copying app-ads.txt to web build..."
 	copy app-ads.txt build\web\app-ads.txt
+	copy googlef519bd2d7790a260.html build\web\googlef519bd2d7790a260.html
 	
 	@echo "Copying assetlinks.json to web build..."
 	mkdir build\web\.well-known 2>nul
